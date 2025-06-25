@@ -1,0 +1,27 @@
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #cbd5e1; /* Light gray track */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #64748b; /* Darker gray thumb */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569; /* Even darker on hover */
+}
+
+/* Animations for Hero Section */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+.animate-fade-in-delay-200 {
+    animation: fadeIn 1s ease-out 0.2s forwards;
+}
